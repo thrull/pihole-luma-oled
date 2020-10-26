@@ -1,6 +1,6 @@
 # pihole-oled
 
-<p align="center"><img src="./res/pihole-oled-demo.gif"></p>
+Original code from willdurand/pihole-oled
 
 ## Hardware
 
@@ -11,8 +11,8 @@ piece of proto-board and short wires. There is nothing fancy here.
 ## Installation
 
 :warning: This project requires a Raspberry Pi with
-[Pi-hole](https://pi-hole.net/) installed, the [I2C bus
-enabled](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-i2c)
+[Pi-hole](https://pi-hole.net/) installed, the [SPI bus
+enabled](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-spi)
 and Python 3.5.
 
 ### Software requirements
@@ -44,13 +44,17 @@ Now install a few libraries for
 ```
 sudo apt-get install libopenjp2-7 libtiff5
 ```
+Now install a luma.oled library [Luma.oled](https://luma-oled.readthedocs.io/en/latest/software.html)
+```
+sudo -H pip install --upgrade luma.oled
+```
 
 ### Project installation
 
 Clone this project:
 
 ```
-git clone https://github.com/willdurand/pihole-oled.git /home/pi/pihole-oled
+git clone https://github.com/thrull/pihole-oled.git /home/pi/pihole-oled
 ```
 
 Install the python dependencies:
