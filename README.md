@@ -42,11 +42,13 @@ Now install a few libraries for
 [Pillow](https://pillow.readthedocs.io/en/stable/index.html):
 
 ```
-sudo apt-get install libopenjp2-7 libtiff5
+sudo apt-get install python3-pil libjpeg-dev zlib1g-dev libfreetype6-dev liblcms2-dev libopenjp2-7 libtiff5 -y
 ```
+
+
 Now install a luma.oled library [Luma.oled](https://luma-oled.readthedocs.io/en/latest/software.html)
 ```
-sudo -H pip install --upgrade luma.oled
+sudo -H pip3 install luma.oled
 ```
 
 ### Project installation
